@@ -12,8 +12,6 @@ public partial class MainViewModel : ObservableObject
     
     public MainViewModel()
     {
-    
-
         var tm = new Timer();
         tm.Interval = 1000;
         tm.Elapsed += (sender, args) =>
