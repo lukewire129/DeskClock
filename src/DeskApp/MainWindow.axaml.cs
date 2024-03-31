@@ -8,6 +8,6 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        this.DataContext = new MainViewModel();
+        this.DataContext = App.Current.Services.GetService (typeof(MainViewModel));
     }
 }
