@@ -34,17 +34,10 @@
                 VerticalAlignment="Bottom"
                 Text="Swipe to Clock" />
         </Grid>
-        <Grid
+        <Border
             Grid.Column="1"
-            Margin="0,30">
-            <Grid.Styles>
-                <Style Selector="Border">
-                    <Setter Property="CornerRadius" Value="20" />
-                    <Setter Property="Background" Value="#d2d9d9" />
-                    <Setter Property="Padding" Value="30, 20" />
-                </Style>
-            </Grid.Styles>
-            <Border Grid.Row="0" Margin="0,0,0,10">
+            Padding="0,30" Background="Transparent">
+            <Border Grid.Row="0" CornerRadius="20" Background="#d2d9d9" Padding="30, 20">
                 <Grid RowDefinitions="Auto,*">
                     <TextBlock
                         FontFamily="{DynamicResource Blinker}"
@@ -53,6 +46,6 @@
                         Text="TASK" />
                 </Grid>
             </Border>
-        </Grid>
+        </Border>
     </Grid>
 </Window>
